@@ -11,14 +11,11 @@ import Footer from "@/components/footer";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 
+import { navItems } from '@/components/data'; // Adjust the path as per your project structure
+
 import { twMerge } from "tailwind-merge";
 
-export const navItems = [
-  { name: "Home", link: "#start" },
-  { name: "Education", link: "#exp" },
-  { name: "Projects", link: "#project" },
-  { name: "Contact", link: "#footer" },
-];
+
 
 export default function Home() {
   return (
