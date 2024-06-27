@@ -23,7 +23,7 @@
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
     "three": "^0.165.0",
-    "mini-svg-data-uri": "^1.0.0",
+    "mini-svg-data-uri": "^10.3.0",
 
   },
   "devDependencies": {
