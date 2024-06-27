@@ -15,26 +15,27 @@ import imgc from "./images/exp1.svg";
 import imgc1 from "./images/exp4.svg";
 import imgc2 from "./images/exp2.svg";
 
+
 export default function BentoGridThirdDemo() {
   return (
-     <div className="relative w-full dark:bg-black bg-black  h-screen dark:bg-grid-black/[0.2] bg-grid-black/[0.2] ">
-              <h1 className="bg-black text-white font-bold p-4">Knowledge</h1>
-
-    <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem] ">
-      {items.map((item, i) => (
-        <BentoGridItem
-          key={i}
-          title={item.title}
-          description={item.description}
-          header={item.header}
-          className={cn("[&>p:text-lg]", item.className)}
-          icon={item.icon}
-        />
-      ))}
-    </BentoGrid>
+    <div className="relative w-screen dark:bg-black bg-black h-screen dark:bg-grid-black/[0.2] bg-grid-black/[0.2] overflow-hidden">
+      <h1 className="bg-black text-white font-bold p-4">Knowledge</h1>
+      <div className="max-w-screen-sm mx-auto">
+        <BentoGrid className="md:auto-rows-[20rem] relative overflow-hidden" >
+          {items.map((item, i) => (
+            <BentoGridItem
+              key={i}
+              title={item.title}
+              description={item.description}
+              header={item.header}
+              className={cn("[&>p:text-lg]", item.className)}
+              icon={item.icon}
+            />
+          ))}
+        </BentoGrid>
+      </div>
     </div>
   );
-}
 const Skeleton = () => (
   <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl   dark:bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-transparent dark:border-white/[0.2] bg-neutral-100 dark:bg-black"></div>
 );
