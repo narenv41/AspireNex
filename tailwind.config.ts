@@ -1,4 +1,6 @@
 import type { Config } from "tailwindcss";
+import miniSvgDataUri from 'mini-svg-data-uri';
+
 
 const svgToDataUri = require("mini-svg-data-uri");
 
